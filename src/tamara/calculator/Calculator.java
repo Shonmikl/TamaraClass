@@ -4,6 +4,7 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 
 public class Calculator {
+
     private static double firstValue;
     private static double secondValue;
     private static String operation;
@@ -29,9 +30,7 @@ public class Calculator {
             case "^" -> result = Math.pow(firstValue, secondValue);
             case "%" -> result = firstValue % secondValue;
             default -> System.out.println("Incorrect command");
-
         }
-
 
         System.out.println("Result " + result);
         return result;

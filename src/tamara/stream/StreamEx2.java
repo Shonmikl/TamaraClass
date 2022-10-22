@@ -1,8 +1,10 @@
 package tamara.stream;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class StreamEx2 {
     public static void main(String[] args) {
@@ -51,6 +53,11 @@ public class StreamEx2 {
                         .boxed()
                         .collect(Collectors.toList());
         System.out.println(avgGrades);
+
+//        Stream<String> studentStream = Stream.of("s", "oiu", "dddd");
+//        String[] s = {"s", "oiu", "dddd"};
+//        Arrays.stream(s)
+
     }
 }
 

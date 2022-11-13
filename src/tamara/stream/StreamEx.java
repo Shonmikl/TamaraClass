@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 public class StreamEx {
@@ -49,7 +50,8 @@ public class StreamEx {
                         el = el/5;
                     }
                     return el;
-                        }).reduce((acc, el2) -> acc * el2)
+                        })
+                .reduce((acc, el2) -> acc * el2)
                 .getAsInt();
 
         System.out.println(chain);

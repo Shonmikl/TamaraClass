@@ -1,6 +1,6 @@
 package tamara;
 
-public class Test1 implements Testable{
+public class Test1 implements Testable {
     public static void main(String[] args) {
 
     }

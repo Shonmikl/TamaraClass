@@ -26,6 +26,7 @@ public class StudentInfo {
         student.add(s5);
 
         StudentInfo info = new StudentInfo();
+
         info.testStudent(student, s -> s.getAvgGrade() > 8);
     }
 }
